@@ -3,19 +3,17 @@ function setup() {
 }
 
 function draw() {
-  background(100);
-  ellipse(100, 100, 100, 100);
+  background('black');
 
-  if(mouseIsPressed) {
+  if (mouseIsPressed) {
     //background, shapes, colors
     background('red');
   } else {
 //normal stuff!
 
   }
-
-
-
+ellipse(100, 100, 100, 100);
 
 text(mouseX + " , " + mouseY, 10, 20);
+
 }
