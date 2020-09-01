@@ -3,16 +3,17 @@ function setup() {
 }
 
 function draw() {
+  background(100);
+  ellipse(100, 100, 100, 100);
 
   if(mouseIsPressed) {
     //background, shapes, colors
-
+    background('red');
   } else {
 //normal stuff!
 
   }
-  background(100);
-  ellipse(100, 100, 100, 100) ;
+
 
 
 
