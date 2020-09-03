@@ -3,7 +3,7 @@ var f, f1;
 function setup() {
   createCanvas(800, 800);
 
-  f = loadFont("assets/n.otf");
+  f = loadFont("assets/b.otf");
   f1 = loadFont("assets/m.otf");
 
   textAlign(CENTER);
@@ -15,7 +15,7 @@ function draw() {
   textFont(f);
   textSize(60);
 
-  text("Feed the", width / 2, height / 2);
+  text("Feed the", width / 2, height / 2, 600, 100);
 
   textFont(f1);
   textSize(80);
