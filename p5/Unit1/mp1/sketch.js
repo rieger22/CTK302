@@ -5,15 +5,16 @@ function setup() {
 function draw() {
   background('black');
 
+
   if (mouseIsPressed) {
     //background, shapes, colors
     background('red');
   } else {
-//normal stuff!
+    //normal stuff!
 
   }
-ellipse(100, 100, 100, 100);
+  ellipse(100, 100, 100, 100);
 
-text(mouseX + " , " + mouseY, 10, 20);
+  text(mouseX + " , " + mouseY, 10, 20);
 
 }
