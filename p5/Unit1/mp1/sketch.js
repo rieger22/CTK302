@@ -21,18 +21,25 @@ rect(225, 300, 15, 75);
 rect(260, 300, 15, 75);
 
 //left arm 1
-rect();
+rect(150, 200, 75, 10);
 //left arm 2
-
+rect(140, 230, 85, 10);
 //left arm 3
+rect(150, 260, 75, 10);
 
 //right arm 1
-
+rect(275, 200, 75, 10);
 //right arm 2
-
+rect(275, 230, 85, 10);
 //right arm 3
+rect(275, 260, 75, 10);
 
+//smile
 arc()
+
+//left eye
+
+//right eye
 
   } else {
     //normal stuff!
