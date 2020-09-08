@@ -3,18 +3,19 @@ function setup() {
 }
 
 function draw() {
-  background('blue');
+  background('grey');
 
 
   if (mouseIsPressed) {
     //background, shapes, colors
-    background('#ff69b4');
+    background('blue');
 
 //head
 ellipse(250, 150, 100, 100);
-    fill('yellow')
+    fill('yellow');
 //body
 rect(225, 200, 50, 100);
+fill('#ff69b4');
 //left leg
 rect(225, 300, 15, 75);
 //right leg
@@ -35,7 +36,7 @@ rect(275, 230, 85, 10);
 rect(275, 260, 75, 10);
 
 //smile
-arc()
+arc(250, 170, 50, 50, 0, PI);
 
 //left eye
 
