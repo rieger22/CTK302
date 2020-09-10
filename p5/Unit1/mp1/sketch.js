@@ -69,6 +69,12 @@ rect(240, 470, 20, 30)
       ellipse(240, 220, 15, 10);
 //right eye
 ellipse(260, 220, 15, 10);
+//left tree
+ellipse();
+rect(180, 220, 30, 50);
+//right tree
+ellipse();
+rect();
   }
 
 //  text(mouseX + " , " + mouseY, 10, 20);
