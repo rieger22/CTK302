@@ -71,7 +71,7 @@ rect(240, 470, 20, 30)
 ellipse(260, 220, 15, 10);
   }
 
-  text(mouseX + " , " + mouseY, 10, 20);
+//  text(mouseX + " , " + mouseY, 10, 20);
 
 }
 //9/5 2 hours planning
