@@ -9,11 +9,11 @@ function draw() {
 
   push();
   translate(x, 0);
-  //rect(0, 250, 50, 50);
+  ellipse(250, 0, 50, 50);
   avatar();
   x = x + 5;
 
-  if (x > width) {
+  if (x > height) {
     x = -225;
   }
 
