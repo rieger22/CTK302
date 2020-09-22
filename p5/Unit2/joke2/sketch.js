@@ -3,6 +3,8 @@ let state = 0;
 
 function setup() {
   createCanvas(500, 500);
+  textSize(32);
+  textAlign(CENTER);
 }
 
 function draw() {
@@ -11,7 +13,7 @@ function draw() {
 
   case 0:
   background('red');
-  text("case 0", 250, 250);
+  text("What concert costs just 45 cents?", 250, 250);
   timer++ ;
 
 //5seconds
@@ -24,7 +26,7 @@ function draw() {
 
   case 1:
   background('blue');
-  text("case 1", 250, 250);
+  text("50 Cent featuring Nickelback!", 250, 250);
     break;
   }
 }

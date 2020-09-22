@@ -21,7 +21,13 @@ function draw() {
     background('blue');
     text("state 2", 250, 250);
     break ;
+
+    case 3:
+    background('white');
+    text("state 3", 250, 250);
+    break ;
   }
+  
 }
 
 function mouseReleased() {
