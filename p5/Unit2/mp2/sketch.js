@@ -1,31 +1,66 @@
+var mic;
+var vol;
+var img1, img2, img3;
 let state = 0;
+let x = 0;
+
 
 function setup() {
   createCanvas(500, 500);
+
+  imageMode(CENTER);
+  img1 = loadImage("assets/shiner.jpg");
+  img2 = loadImage("assets/hum.jpg");
+  img3 = loadImage("assets/pc.jpg");
+  
+  mic = new p5.AudioIn();
+  mic.start();
 }
 
 function draw() {
 
+vol = (mic.getLevel()).toFixed(2);
+
   switch (state) {
     case 0:
-    background('red');
-    text("state 0", 250, 250);
+    background('black');
+    textAlign(CENTER);
+    fill('white');
+    textSize(24);
+    text("Make some noise for your favorite band!\nClick to start.", 250, 250);
+    if (vol > .03) {
+      state = 1;
+    }
     break ;
-    //microphone
+
 
     case 1:
-    background('green');
-    text("state 1", 250, 250);
+    background('purple');
+    textAlign(CENTER);
+    textSize(32);
+    text("Shiner", 250, 250);
+    image(img1, width / 2, height / 2, 200, 200);
+    if (vol > .05) {
+      state = 2;
+    }
     break ;
 
     case 2:
-    background('blue');
-    text("state 2", 250, 250);
+    background('red');
+    textAlign(CENTER);
+    textSize(32);
+    text("HUM", 250, 250);
+    if (vol > .1) {
+      state = 3;
+    }
     break ;
 
     case 3:
-    background('white');
-    text("state 3", 250, 250);
+    background('yellow');
+    textAlign(CENTER);
+    fill('purple');
+    textSize(32);
+    text("POSTER CHILDREN!!!", 250, 250);
     break ;
   }
 
@@ -33,7 +68,11 @@ function draw() {
 
 function mouseReleased() {
   state++;
-  if (state > 2) {
+  if (state > 3) {
     state = 0 ;
   }
+}
+
+  function touchStarted() {
+    getAudioContext().resume();
 }
