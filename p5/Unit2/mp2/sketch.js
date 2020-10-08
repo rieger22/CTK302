@@ -4,7 +4,6 @@ var img1, img2, img3;
 let state = 0;
 let x = 0;
 
-
 function setup() {
   createCanvas(500, 500);
 
@@ -12,7 +11,7 @@ function setup() {
   img1 = loadImage("assets/shiner.jpg");
   img2 = loadImage("assets/hum.jpg");
   img3 = loadImage("assets/pc.jpg");
-  
+
   mic = new p5.AudioIn();
   mic.start();
 }
