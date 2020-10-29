@@ -6,7 +6,7 @@ let maxCars = 5;
 let frogPos;
 let state = -1;
 let timer = 0;
-var song1, song2, song3, song4;
+let song1, song2, song3, song4;
 var monkey;
 var banana;
 
@@ -40,7 +40,6 @@ function setup() {
   for (let i = 0; i < maxCars; i++) {
     cars.push(new Car());
   }
-
 }
 
 function draw() {
