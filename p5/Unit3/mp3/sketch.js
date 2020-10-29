@@ -30,7 +30,7 @@ function setup() {
   f1 = loadFont("assets/KGChasingCars.ttf");
   f2 = loadFont("assets/rock.ttf");
   f3 = loadFont("assets/spaceage.ttf");
-  bg = loadImage("assets/background.jpg");
+  bg = loadImage("assets/background.JPG");
   bc = loadImage("assets/start.jpg");
   bd = loadImage("assets/lose.jpg");
 
