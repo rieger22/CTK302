@@ -1,6 +1,6 @@
 let cars = [];
 let f1, f2, f3;
-let bg, bc;
+let bg, bc, bd;
 let fonts = [];
 let maxCars = 5;
 let frogPos;
