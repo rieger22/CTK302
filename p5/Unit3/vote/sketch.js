@@ -1,6 +1,7 @@
 let cars = [];
 let f1, f2, f3;
 let bg;
+let fonts = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -8,6 +9,8 @@ function setup() {
   f2 = loadFont("assets/rock.ttf");
   f3 = loadFont("assets/spaceage.ttf");
   bg = loadImage("assets/fallPic.jpg");
+
+  fonts = [f1, f2, f3];
 
   // Spawn 20 objects
   for (let i = 0; i < 20; i++) {
@@ -35,7 +38,9 @@ class Car {
     this.vel = createVector(random(-3, 3), random(-3, 3));
     this.size = random(60, 180);
     this.c = color(random(255), random(255), random(255));
-    this.font = f1;
+
+  let b = floor(random(3)); //random # between 0 and 2.999
+    this.font = fonts[b];
   }
 
   // methods
