@@ -1,6 +1,6 @@
 let cars = [];
 let f1, f2, f3;
-let bg, bc, bd;
+let bg, bc, bd, bs;
 let fonts = [];
 let maxCars = 5;
 let frogPos;
@@ -35,6 +35,7 @@ function setup() {
   bg = loadImage("assets/background.JPG");
   bc = loadImage("assets/start.jpg");
   bd = loadImage("assets/lose.jpg");
+  bs = loadImage("assets/win.jpg");
 
   fonts = [f1, f2, f3];
 
@@ -76,6 +77,7 @@ function draw() {
   break ;
 
   case 2:
+  image(bs, 0, 0, width, height);
   background('red');
   textSize(52);
   fill('white');
