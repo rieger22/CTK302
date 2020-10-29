@@ -42,6 +42,10 @@ function setup() {
   }
 }
 
+function touchStarted() {
+  getAudioContext().resume();
+}
+
 function draw() {
   switch(state) {
   case -1:
