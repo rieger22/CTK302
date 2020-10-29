@@ -24,7 +24,6 @@ function setup() {
   textSize("40");
   rectMode(CENTER);
 
-  getAudioContext().resume();
 
   monkey = loadImage("assets/monkey.png");
   banana = loadImage("assets/banana.png");
@@ -45,9 +44,7 @@ function setup() {
   }
 }
 
-// function touchStarted() {
-//   getAudioContext().resume();
-// }
+
 
 function draw() {
   switch(state) {
@@ -78,10 +75,10 @@ function draw() {
 
   case 2:
   image(bs, 0, 0, width, height);
-  background('red');
+  //background('red');
   textSize(52);
-  fill('white');
-  text("YAY YOU WON!", width/2, height/2);
+  fill('yellow');
+  text("YOU FED THE MONKEY!!", width/2, height - 500);
   break ;
 
   case 3:
@@ -89,7 +86,7 @@ function draw() {
   //background('purple');
   textSize(64);
   fill('#e75480');
-  text("YOU LOST", width/2, height - 540);
+  text("NO!! YOU LOST", width/2, height - 540);
   break ;
   }
 
@@ -193,3 +190,6 @@ class Car {
     if (this.pos.y < 0) this.pos.y = height;
   }
 }
+ function touchStarted() {
+   getAudioContext().resume();
+ }
