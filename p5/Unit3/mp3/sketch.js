@@ -186,7 +186,4 @@ class Car {
     if (this.pos.y > height) this.pos.y = 0;
     if (this.pos.y < 0) this.pos.y = height;
   }
-  function touchStarted() {
-    getAudioContext().resume();
-  }
 }
