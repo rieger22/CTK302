@@ -24,6 +24,8 @@ function setup() {
   textSize("40");
   rectMode(CENTER);
 
+  getAudioContext().resume();
+
   monkey = loadImage("assets/monkey.png");
   banana = loadImage("assets/banana.png");
 
@@ -42,9 +44,9 @@ function setup() {
   }
 }
 
-function touchStarted() {
-  getAudioContext().resume();
-}
+// function touchStarted() {
+//   getAudioContext().resume();
+// }
 
 function draw() {
   switch(state) {
@@ -189,7 +191,3 @@ class Car {
     if (this.pos.y < 0) this.pos.y = height;
   }
 }
-
-// function touchStarted() {
-//   getAudioContext().resume();
-// }
