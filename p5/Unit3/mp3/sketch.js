@@ -42,7 +42,9 @@ function setup() {
   }
 }
 
-
+function touchStarted() {
+  getAudioContext().resume();
+}
 
 function draw() {
   switch(state) {
@@ -188,6 +190,6 @@ class Car {
   }
 }
 
-function touchStarted() {
-  getAudioContext().resume();
-}
+// function touchStarted() {
+//   getAudioContext().resume();
+// }
