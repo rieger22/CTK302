@@ -86,7 +86,7 @@ function draw() {
   //background('purple');
   textSize(64);
   fill('#e75480');
-  text("NO!! YOU LOST", width/2, height - 540);
+  text("YOU LOST", width/2, height - 540);
   break ;
   }
 
