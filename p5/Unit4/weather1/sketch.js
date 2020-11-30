@@ -49,8 +49,8 @@ function draw() {
       break;
 
     case 1:
-      background(200);
-      fill('black');
+      background('purple');
+      fill('yellow');
     //  textFont()
       text("What is the weather in " + weather.name + "?", 20, 20);
       text("windspeed is " + windspeed, 20, 40);
