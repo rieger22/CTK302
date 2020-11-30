@@ -8,10 +8,16 @@ var windspeed = 0 ;
 var temperature = 0;
 var humidity = 0;
 var name;
+var image1;
+var image2;
 
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(500, 500);
+
+  imageMode(CENTER);
+  image1 = loadImage("assets/glen.jpg");
+  image2 = loadImage("assets/monkey1.png");
 
   // HERE is the call to get the weather.
 
@@ -50,6 +56,7 @@ function draw() {
 
     case 1:
       background('purple');
+      image(image1, width/2, height/2);
       fill('yellow');
     //  textFont()
       text("What is the weather in " + weather.name + "?", 20, 20);
@@ -63,7 +70,8 @@ function draw() {
       //fill(255 - humidity)
       fill('white');
       noStroke();
-      ellipse(x, 300, 200, 100);
+      image(image2, x, 300, 200, 100);
+    //  ellipse(x, 300, 200, 100);
 
       // move the cloud's x position
       x = x + windspeed;
