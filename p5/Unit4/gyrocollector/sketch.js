@@ -60,7 +60,7 @@ function draw() {
   // draw the FROG
   // image(bunnyImage, 0, 0, 500, 500);
   //fill('green');
-  image(img1, 0, 0, 500, 500);
+  image(img1, 0, 0, 150, 150);
   pop();
 
   // update the frog's position using the accelerometer data
